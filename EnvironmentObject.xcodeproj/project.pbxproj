@@ -11,6 +11,8 @@
 		7085B18F25A5A84300456690 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7085B18E25A5A84300456690 /* ContentView.swift */; };
 		7085B19125A5A84400456690 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7085B19025A5A84400456690 /* Assets.xcassets */; };
 		7085B19425A5A84400456690 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7085B19325A5A84400456690 /* Preview Assets.xcassets */; };
+		7085B19D25A5AA0900456690 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7085B19C25A5AA0900456690 /* UserSettings.swift */; };
+		7085B1A025A5AB8400456690 /* FancyScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7085B19F25A5AB8400456690 /* FancyScoreView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		7085B19025A5A84400456690 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7085B19325A5A84400456690 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7085B19525A5A84400456690 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7085B19C25A5AA0900456690 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		7085B19F25A5AB8400456690 /* FancyScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyScoreView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			children = (
 				7085B18C25A5A84300456690 /* EnvironmentObjectApp.swift */,
 				7085B18E25A5A84300456690 /* ContentView.swift */,
+				7085B19F25A5AB8400456690 /* FancyScoreView.swift */,
+				7085B19C25A5AA0900456690 /* UserSettings.swift */,
 				7085B19025A5A84400456690 /* Assets.xcassets */,
 				7085B19525A5A84400456690 /* Info.plist */,
 				7085B19225A5A84400456690 /* Preview Content */,
@@ -139,7 +145,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7085B18F25A5A84300456690 /* ContentView.swift in Sources */,
+				7085B19D25A5AA0900456690 /* UserSettings.swift in Sources */,
 				7085B18D25A5A84300456690 /* EnvironmentObjectApp.swift in Sources */,
+				7085B1A025A5AB8400456690 /* FancyScoreView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

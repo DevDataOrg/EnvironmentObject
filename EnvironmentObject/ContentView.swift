@@ -8,9 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var userSettings = UserSettings()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack{
+            Text("\(self.userSettings.score)")
+                .font(.largeTitle)
+            Button("Increment Score") {
+                
+                self.userSettings.score += 1
+            }
+        }
     }
 }
 
