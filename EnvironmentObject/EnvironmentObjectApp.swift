@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct EnvironmentObjectApp: App {
+    @StateObject var userSettings2 = UserSettings()
+    //@SateObject var userSettings: UserSettings
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(userSettings2)
         }
     }
 }

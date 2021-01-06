@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct FancyScoreView: View {
-    @Binding var score: Int
+    //@Binding var score: Int
+    @EnvironmentObject var userSettings2: UserSettings
     
     var body: some View {
-        
         VStack {
-            Text("\(score)")
+            Text("\(self.userSettings2.score)")  //Text("\(self.score)")
             Button("Increment Score") {
-                self.score += 1
+                //self.score += 1
+                self.userSettings2.score += 1
             }.padding().background(Color.green)
         }.padding().background(Color.orange)
         
@@ -24,6 +25,8 @@ struct FancyScoreView: View {
 
 struct FancyScoreView_Previews: PreviewProvider {
     static var previews: some View {
-        FancyScoreView(score: .constant(0))
+        //ObservedObject FancyScoreView(score: .constant(0))
+        //EnvironmentObject
+        FancyScoreView()
     }
 }

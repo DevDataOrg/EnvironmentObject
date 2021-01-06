@@ -8,19 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
-    @ObservedObject var userSettings = UserSettings()
+    //@ObservedObject var userSettings1 = UserSettings()
+    @EnvironmentObject var userSettings2: UserSettings
     
     var body: some View {
         VStack{
-            Text("\(self.userSettings.score)")
+            Text("\(self.userSettings2.score)")
                 .font(.largeTitle)
             Button("Increment Score") {
                 
-                self.userSettings.score += 1
+                self.userSettings2.score += 1
             }
-            FancyScoreView(score: self.$userSettings.score)
+            //ObservedObject ----->
+            //FancyScoreView(score: self.$userSettings2.score)
+            //EnvironmentObject ----->
+            FancyScoreView()
         }
-        
     }
 }
 
