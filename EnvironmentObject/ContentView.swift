@@ -18,7 +18,9 @@ struct ContentView: View {
                 
                 self.userSettings.score += 1
             }
+            FancyScoreView(score: self.$userSettings.score)
         }
+        
     }
 }
 
